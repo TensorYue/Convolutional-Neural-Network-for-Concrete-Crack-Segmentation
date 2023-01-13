@@ -20,7 +20,7 @@ Figure 2. Network architecture
 ![Convolutional Network](https://user-images.githubusercontent.com/112973740/212203407-4070090a-bd75-46d9-9219-06e0493ddacf.png)
 
 ## Training and Testing
-To illustrate the improvement, we first train our model on a selected training set with limited characteristics (rough surface), then test it with all the characteristics. The training set is the subset 'CRACK500' from Concrete Crack Conglomerate Dataset [3]. For hyperparameter selection, please see the attached code. The result is shown in figure 3.
+To illustrate the improvement, we first train our model on a selected training set with limited characteristics (rough surface), then test it with all the characteristics. The training set is the subset 'CRACK500' from Concrete Crack Conglomerate Dataset [3]. For hyperparameter selection, please see the attached code 'Inception UNet.ipynb'. The result is shown in figure 3.
 
 Figure 3. Testing result
 ![image](https://user-images.githubusercontent.com/112973740/212215508-92fbdcb4-5148-4470-954a-ca732ce29187.png)
