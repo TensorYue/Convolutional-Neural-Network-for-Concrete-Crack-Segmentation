@@ -8,7 +8,7 @@ In 2019, Zhengqing Liu etc. had applied U-Net for concrete crack detection [2], 
 
 Here we design a new network by adding a preprocessor inspired by 'Inceptoin Network' to address this overfitting issue.
 
-## Network
+## Network Design
 U-Net architecture has unique ability with high learning speed from training set, and high accuracy when prediction. Different from FCN, it supplements a usual contracting network with successive layers, where pooling oprators are replaced by upsampling operators. It would keep the output from each convolutional layer by either concatenating it with the upsampled results or simply adding them together. This modification can take advantage of these procedures to overcome the trade-off between localization accuracy and the use of context (FCN requires more max-pooling layers which reduce the localization accuracy, while small patches allow the network to see only little context). 
 
 Thus, to minimize overfitting with U-Net, we need to preprocess our input images. An idea from 'Inception Network' is to add multiple processors that could capture different features from original images, and store them (either add or concatenate) as the input of next layer. By analysing testing images and their result, we have extracted 4 main characteristics that could lead an overfitting. The non-trainable pooling layers could be an excellent choice to standardize our input. As AveragePooling could flatten background noise and MaxPooling to highlight the potential cracks.
@@ -17,7 +17,7 @@ Figure 1. Characteristics of images
 ![Charastristic](https://user-images.githubusercontent.com/112973740/212207182-eeed65cb-a6e9-4103-a1b2-ece6b1353552.png)
 
 Figure 2. Network architecture
-![Convolutional Network](https://user-images.githubusercontent.com/112973740/212203407-4070090a-bd75-46d9-9219-06e0493ddacf.png)
+![Convolutional Network](https://user-images.githubusercontent.com/112973740/212524893-25d07043-af57-4c5e-b04c-82414b115137.png)
 
 ## Training and Testing
 To illustrate the improvement, we first train our model on a selected training set with limited characteristics (rough surface), then test it with all the characteristics. The training set is the subset 'CRACK500' from Concrete Crack Conglomerate Dataset [3]. For hyperparameter selection, please see the attached code 'Inception UNet.ipynb'. The result is shown in figure 3.
