@@ -29,8 +29,8 @@ Figure 3. Testing result
 Convolutional Neural Network would generally need large training set to optimize all the parameters (7,783,545 trainable in our case). However, this network shows great potential as it trains fast, and predict precisely even with limited features in the training set.
 ## Reference
 
-[1] U-Net: Convolutional Networks for Biomedical Image Segmentation https://doi.org/10.48550/arXiv.1505.04597
+[1] Olaf Ronneberger, Philipp Fischer, Thomas Brox (2015) U-Net: Convolutional Networks for Biomedical Image Segmentation https://doi.org/10.48550/arXiv.1505.04597
 
-[2] Computer vision-based concrete crack detection using U-net fully convolutional networks https://doi.org/10.1016/j.autcon.2019.04.005
+[2] Zhenqing Liu, Yiwen Cao, Yize Wang, Wei Wang (2019) Computer vision-based concrete crack detection using U-net fully convolutional networks https://doi.org/10.1016/j.autcon.2019.04.005
 
-[3] Concrete Crack Conglomerate Dataset https://doi.org/10.7294/16628596
+[3] Eric Bianchi, Matthew Hebdon (2021) Concrete Crack Conglomerate Dataset https://doi.org/10.7294/16628596
